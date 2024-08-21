@@ -1,4 +1,4 @@
-package baseball;
+package baseball.entity;
 
 import java.util.HashSet;
 import java.util.Random;

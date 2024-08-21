@@ -1,4 +1,4 @@
-package baseball;
+package baseball.entity;
 
 /**
  * @author : lhd

@@ -1,4 +1,4 @@
-package baseball;
+package baseball.entity;
 
 import java.util.Scanner;
 
@@ -15,14 +15,17 @@ import java.util.Scanner;
  */
 public class Player {
     private String number;
-    private Scanner scanner;
 
-    public Player() {
-        scanner = new Scanner(System.in);
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public String inputNumber(Scanner scanner) {
-        this.number = this.scanner.nextLine();
+        this.number = scanner.nextLine();
         return number;
     }
 }
