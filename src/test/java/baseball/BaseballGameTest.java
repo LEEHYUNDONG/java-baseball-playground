@@ -1,10 +1,11 @@
 package baseball;
 
-import javafx.util.Pair;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import utils.Pair;
+import utils.Referee;
 
 
 import java.io.ByteArrayInputStream;
