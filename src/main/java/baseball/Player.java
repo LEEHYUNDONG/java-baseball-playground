@@ -15,14 +15,15 @@ import java.util.Scanner;
  */
 public class Player {
     private String number;
-    private Scanner scanner;
 
     public Player() {
-        scanner = new Scanner(System.in);
+        number = "1";
+    }
+    public String getNumber() {
+        return number;
     }
 
-    public String inputNumber(Scanner scanner) {
-        this.number = this.scanner.nextLine();
-        return number;
+    public void setNumber(Scanner scanner) {
+        this.number = scanner.nextLine();
     }
 }
