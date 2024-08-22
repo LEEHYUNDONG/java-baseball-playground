@@ -13,6 +13,7 @@ package baseball;
  */
 public class BaseballGameApp {
     public static void main(String[] args) {
-
+        BaseballGame baseballGame = new BaseballGame();
+        baseballGame.start(new Computer(), new Player());
     }
 }
