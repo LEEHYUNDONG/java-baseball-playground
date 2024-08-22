@@ -3,6 +3,7 @@ package baseball;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * @author : lhd
@@ -17,6 +18,16 @@ import java.util.Set;
  */
 public class Computer {
     private String answer;
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    private void setAnswer() {}
+
+    public Computer() {
+        this.answer = String.join("", generateNumber());
+    }
 
     public Set<String> generateNumber() {
         Random random = new Random();
