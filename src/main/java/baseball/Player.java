@@ -16,6 +16,9 @@ import java.util.Scanner;
 public class Player {
     private String number;
 
+    public Player() {
+        number = "1";
+    }
     public String getNumber() {
         return number;
     }
