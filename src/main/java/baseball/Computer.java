@@ -30,15 +30,14 @@ public class Computer {
     }
 
     public Set<String> generateNumber() {
-        Random random = new Random();
         Set<String> result = new HashSet<>();
-
+        Random random = new Random();
         random.setSeed(System.currentTimeMillis());
+
         while(result.size() < 3) {
             int num = random.nextInt(8)+1;
             result.add(String.valueOf(num));
         }
-
         return result;
     }
 }
