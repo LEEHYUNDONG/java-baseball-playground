@@ -1,4 +1,4 @@
-package baseball.v2;
+package v2.baseball;
 
 /**
  * @author : lhd
