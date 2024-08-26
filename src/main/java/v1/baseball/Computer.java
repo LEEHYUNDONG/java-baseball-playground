@@ -1,9 +1,8 @@
-package baseball;
+package v1.baseball;
 
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * @author : lhd

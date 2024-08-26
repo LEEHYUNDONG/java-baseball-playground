@@ -1,10 +1,10 @@
-package baseball;
+package v1.baseball;
 
 
 
 
-import utils.Pair;
-import utils.Referee;
+import v1.utils.Pair;
+import v1.utils.Referee;
 
 import java.util.Scanner;
 
