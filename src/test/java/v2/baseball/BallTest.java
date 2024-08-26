@@ -1,4 +1,4 @@
-package baseball.v2;
+package v2.baseball;
 
 import org.junit.jupiter.api.Test;
 
@@ -20,18 +20,18 @@ public class BallTest {
     @Test
     void nothing() {
         Ball ball = new Ball(1, 1);
-        assertThat(ball.play(1, 3)).isEqualTo(BallStatus.NOTHING);
+        assertThat(ball.play(new Ball(1, 3))).isEqualTo(BallStatus.NOTHING);
     }
 
     @Test
     void ball() {
         Ball ball = new Ball(2,1);
-        assertThat(ball.play(3, 1).isBall(BallStatus.BALL)).isTrue(); // 이게 맞는지 한번 고민해보자
+        assertThat(ball.play(new Ball(3, 1)).isBall(BallStatus.BALL)).isTrue(); // 이게 맞는지 한번 고민해보자
     }
 
     @Test
     void strike() {
         Ball ball = new Ball(1, 3);
-        assertThat(ball.play(1, 3)).isEqualTo(BallStatus.STRIKE);
+        assertThat(ball.play(new Ball(1, 3))).isEqualTo(BallStatus.STRIKE);
     }
 }

@@ -1,4 +1,6 @@
-package baseball.v2;
+package v2.baseball;
+
+import java.util.Objects;
 
 /**
  * @author : lhd
@@ -20,23 +22,36 @@ public class Ball {
         this.ballNum = ballNum;
     }
 
-    public BallStatus play(int position, int ballNum) {
-        if(isPosEqual(position) && isBallNumEqual(ballNum)) {
+    public BallStatus play(Ball ball) {
+        if(this.equals(ball)) {
             return BallStatus.STRIKE;
         }
 
-        if(isBallNumEqual(ballNum)) {
+        if(isBallNumEqual(ball)) {
             return BallStatus.BALL;
         }
         return BallStatus.NOTHING;
     }
 
-    private boolean isPosEqual(int position) {
-        return this.position == position;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ball ball = (Ball) o;
+        return position == ball.position && ballNum == ball.ballNum;
     }
 
-    private boolean isBallNumEqual(int num) {
-        return this.ballNum == num;
+    public int getPosition() {
+        return position;
+    }
+
+    public int getBallNum() {
+        return ballNum;
+    }
+
+
+    private boolean isBallNumEqual(Ball ball) {
+        return this.ballNum == ball.getBallNum();
     }
 
 }

@@ -1,4 +1,4 @@
-package baseball.v2;
+package v2.baseball;
 
 /**
  * @author : lhd
@@ -15,14 +15,15 @@ public enum BallStatus {
     NOTHING, BALL, STRIKE;
 
     public boolean isStrike(BallStatus ballStatus){
-        return ballStatus == STRIKE;
+        return this == STRIKE;
     }
 
-    public boolean isNothing(BallStatus ballStatus) {
-        return ballStatus == NOTHING;
+    public boolean isNothing() {
+        return this == NOTHING;
     }
 
     public boolean isBall(BallStatus ballStatus) {
-        return ballStatus == BALL;
+        return this == BALL;
     }
+
 }
